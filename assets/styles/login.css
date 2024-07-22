@@ -1,0 +1,86 @@
+/* src/assets/styles/main.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* Prevent scrolling to ensure full coverage */
+}
+
+body {
+  font-family: 'Roboto Mono', sans-serif; /* Apply the Roboto font */
+  background-color: #121212; /* Dark background color */
+  color: #e0e0e0; /* Light text color for readability */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  background-color: #1e1e1e; /* Darker background for the login box */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Darker shadow for depth */
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.login-icon {
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
+  margin-bottom: 20px; /* Space below the icon */
+}
+
+.login-container label {
+  font-size: 14px;
+  color: #b0bec5; /* Light grey color for labels */
+}
+
+.login-container input {
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #333; /* Dark border for inputs */
+  border-radius: 4px;
+  background-color: #333; /* Dark background for inputs */
+  color: #e0e0e0; /* Light text color in inputs */
+  width: calc(100% - 24px); /* Full width minus padding */
+}
+
+.login-container button {
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #00e5ff; /* Bright cyan background for buttons */
+  color: #121212; /* Dark text color for contrast */
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for effects */
+  font-family: 'Roboto Mono', monospace;
+}
+
+.login-container button:hover {
+  background-color: #00bcd4; /* Slightly darker cyan for hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6); /* Enhanced shadow on hover */
+}
+
+.login-container button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #00bcd4; /* Focus outline with cyan color */
+}
+
+.login-container .create-account-link {
+  margin-top: 15px;
+  display: inline-block;
+  text-decoration: none;
+  color: #00e5ff; /* Bright cyan color for link */
+  font-size: 14px;
+  font-weight: 400; /* Regular font weight for the link */
+}
+
+.login-container .create-account-link:hover {
+  text-decoration: underline;
+}
